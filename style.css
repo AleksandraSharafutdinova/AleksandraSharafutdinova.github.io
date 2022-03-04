@@ -343,6 +343,11 @@ body {
 }
 
 @media (min-width: 1120px) {
+    .main-info {
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .main-foto {
         width: 532px;
         height: 337px;
