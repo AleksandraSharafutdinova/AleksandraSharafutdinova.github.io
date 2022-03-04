@@ -1,0 +1,148 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    width: 320px;
+    height: 597px;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header__buttons {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.burger {
+    background: url("/images/burger.svg");
+}
+.repair {
+    background: url("/images/repair.svg");
+}
+.chekstatus {
+    background: url("/images/checkstatus.svg");
+}
+
+.header__buttons_logo {
+    width: 98px;
+    height: 52px;
+}
+
+.header__buttons.repair:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    left: 186px;
+    top: 28px;
+}
+.main{
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.main__title {
+    padding-left: 16px;
+    font-family: "TT Lakes Bold", sans-serif;
+    font-size: 28px;
+}
+.main__title:before {
+    content: "";
+    width: 4px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    background-color: #41F6D7;
+    position: absolute;
+    left: -1px;
+}
+
+.main__menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}
+.main__menu::-webkit-scrollbar {
+    display: none;
+}
+.menu__items {
+    display: block;
+    border: none;
+    background-color: #f8f8f8;
+    color: #7E7E82;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+}
+.menu__items:first-child {
+    background-color: white;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    margin-left: 24px;
+}
+.menu__items-active{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 254px;
+}
+.menu__items-services{
+    flex: 0 0 211px;
+}
+.menu__items-prices{
+    flex: 0 0 152px;
+}
+.menu__items-address{
+    flex: 0 0 233px;
+}
+.menu__items-special{
+    flex: 0 0 191;
+}
+.menu__items-responses{
+    flex: 0 0 95;
+}
+.menu__items:hover{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-info__text {
+    width: 288px;
+    height: 90px;
+    margin: 24px 16px 16px 16px;
+    font-size: 14px;
+}
+
+.main-info__button{
+    display: flex;
+    margin-left: 48px;
+
+}
+.info__more{
+    border: none;
+    background-color: #F8F8F8;
+    margin-left: 16px;
+    font-size: 16px;
+}
+.main-info__foto{
+    margin-top: 16px;
+}
+
+
